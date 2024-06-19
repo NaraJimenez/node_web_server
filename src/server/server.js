@@ -1,9 +1,11 @@
-const express = require('express');
+import express from 'express';
+//const express = require('express');
 
 //Para poder leer las carpetas
-const path = require('path');
+import path from 'path';
+//const path = require('path');
 
-const startServer = (options) => {
+export const startServer = (options) => {
     //Si no vinene nada que sea public
     const { port, public_path = 'public' } = options
     //console.log(port);
@@ -31,6 +33,6 @@ const startServer = (options) => {
 
 }   
 
-module.exports = {
+/*module.exports = {
     startServer
-}
+}*/
